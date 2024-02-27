@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+:root {
+    color: white;
+    background-color: black;
+    --cor-borda-conhecimento: rgb(22, 156, 197);
+}
+
+main > div{
+    display: flex;
+}
+
+#dados-contato {
+    width: 34%;
+    padding: 0 10px;
+}
+
+#dados-contato > div {
+    color: black;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    padding: 20px 20px;
+}
+
+#dados-contato > div:first-child{
+    padding: 0;
+}
+
+#dados-contato > div > img {
+    width: 100%;
+}
+
+.info {
+    border: 2px solid var(--cor-borda-conhecimento);
+    margin: 50px;
+    border-width: 5px;
+    border-radius: 20px;
+}
+
+#informacoes {
+    flex-grow: 1;
+    padding:  0px 10px 5px;
+}
+
+.info li > h3 {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.info li > p:first-of-type{
+    display: block;
+    color: #ccc;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.info li > p:last-of-type{
+    margin-top: 0;
+}
+
+#conhecimentos li {
+    display: inline;
+    background-color: var(--cor-borda-conhecimento);
+    padding: 0 5px;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+#conhecimentos li {
+    color: black;
+}
+
+#idiomas > table {
+    width: 80%;
+}
+
+#idiomas > table > thead {
+    background-color: #333;
+}
+
+#idiomas > table > tbody tr:nth-child(2n+1) { /* linhas impares */ 
+    background-color: #777;
+}
+
+#idiomas > table > tbody tr:nth-child(2n) { /* linhas impares */ 
+    background-color: #555;
+}
